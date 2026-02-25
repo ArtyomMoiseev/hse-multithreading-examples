@@ -10,5 +10,7 @@ find_package(Threads REQUIRED)
 
 include_directories(include)
 
+add_subdirectory(cache)
+add_subdirectory(futex)
 add_subdirectory(processes_and_threads)
 add_subdirectory(synchronization_primitives)
