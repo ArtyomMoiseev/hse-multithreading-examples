@@ -10,7 +10,7 @@ static constexpr uint32_t MSG_STOP = 2;
 
 int main() {
   static constexpr auto QueueName = "/hse_mpsc_demo";
-  static constexpr size_t QueueCapacity = 64;
+  static constexpr size_t QueueCapacity = 4096;
 
   std::cout << std::format("producer: creating queue '{}' with capacity {}",
                            QueueName, QueueCapacity)

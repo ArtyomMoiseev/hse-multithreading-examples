@@ -10,7 +10,7 @@ static constexpr uint32_t MSG_STOP = 2;
 
 int main(int argc, char *argv[]) {
   static constexpr auto QueueName = "/hse_mpsc_demo";
-  static constexpr size_t QueueCapacity = 64;
+  static constexpr size_t QueueCapacity = 4096;
 
   bool has_filter = false;
   uint32_t filter_type = 0;
